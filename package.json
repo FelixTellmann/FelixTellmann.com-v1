@@ -1,0 +1,48 @@
+{
+  "name": "felix-tellmann-com",
+  "version": "0.0.1",
+  "description": "FelixTellmann.com Personal portfolio website & playground for fun projects.",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export",
+    "test": "jest --watch",
+    "test-all": "jest --watchAll"
+  },
+  "author": "Felix Tellmann",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "*",
+    "isomorphic-unfetch": "*",
+    "ngrok": "*"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "*",
+    "node-sass": "*",
+    "react": "*",
+    "react-dom": "*",
+    "next": "*",
+    "@types/mysql": "*",
+    "@types/chrome": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "babel-jest": "*",
+    "identity-obj-proxy": "*",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "jest": "*",
+    "@types/jest": "*",
+    "ts-jest": "*",
+    "typescript": "*",
+    "react-test-renderer": "*",
+    "react-icons": "*",
+    "serverless-mysql": "*",
+    "url-loader": "*",
+    "express-mysql-session": "*",
+    "express-session": "*",
+    "isomorphic-unfetch": "*",
+    "dotenv": "*",
+    "mysql2": "*"
+  }
+}
