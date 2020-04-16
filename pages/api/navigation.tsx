@@ -1,4 +1,4 @@
-const { database } = require('../../lib/database');
+const { database } = require('library/database');
 import { NextApiRequest, NextApiResponse } from 'next';
 import { NavigationData } from 'pages/_app';
 

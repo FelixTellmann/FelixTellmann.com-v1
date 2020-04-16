@@ -40,16 +40,18 @@
 }
 
 .border {
-  position: fixed;
+  position: sticky;
+  z-index: 10000;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin-bottom: -100vh;
   background: var(--border-color);
   animation-name: border;
-  animation-delay: var(--border-animation-delay);
   animation-duration: var(--border-animation-duration);
   animation-timing-function: linear;
+  animation-delay: var(--border-animation-delay);
   animation-iteration-count: var(--border-animation-loop);
   animation-fill-mode: both;
 }

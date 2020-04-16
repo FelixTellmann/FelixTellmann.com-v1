@@ -24,6 +24,12 @@
       ],
       "pages/*": [
         "pages/*"
+      ],
+      "library/*": [
+        "library/*"
+      ],
+      "/*": [
+        "public/*"
       ]
     }
   },
