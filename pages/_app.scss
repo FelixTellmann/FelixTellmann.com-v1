@@ -68,13 +68,8 @@ button, input, select, textarea {
 }
 
 .page {
-  background-color: #ebeced;
-  overflow-y: auto;
-  height: 100%;
-}
-
-.page2 {
   min-height: 300vh;
+  padding-top: 100px;
   background-color: #ebeced;
 }
 
@@ -85,8 +80,8 @@ body {
 .body {
   position: fixed;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   overflow: auto;
 }

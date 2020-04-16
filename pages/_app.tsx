@@ -36,7 +36,7 @@ function Layout({ pageProps, Component }: Props) {
          }}>
       <Border loading={isLoading} width="7px" duration={3}
               color={`linear-gradient(75deg, ${theme.color_accent_primary}, ${theme.color_accent_secondary})`} />
-      <div className="page2">
+      <div className="page">
         // TODO make header responsive
         // TODO refactor head to be its own component. + subcomponents of logo nav socialnav etc.
 
@@ -46,9 +46,12 @@ function Layout({ pageProps, Component }: Props) {
             <a href="#" className="logo__link">
               <img className="logo__img" src="/logo.svg" alt="Felix Tellmann Logo" />
             </a>
+            <div className="logo__title">
+              <h1>Felix Tellmann</h1>
+              <h2>Front-end Engineer</h2>
+            </div>
           </div>
           <nav className="nav">
-            <a href="#" className="nav__item">Hello</a>
             <a href="#" className="nav__item">Articles</a>
             <a href="#" className="nav__item">Projects</a>
             <a href="#" className="nav__item">About</a>
