@@ -1,87 +1,95 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:300,500,700|Roboto+Slab:800&display=swap');
 
-*, *:before, *:after {
-  box-sizing: border-box;
+:root {
+  --color-text: #252627;
+  --color-background: #fafafa;
+  --color-accent: #e8472b;
+  --font-family: Inter;
+  --font-family-blog-content: 'Roboto Slab';
+  --font-family-backup: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', sans-serif;
+  --font-size-root: 10px;
+  --font-size-smaller: 1.2rem;
+  --font-size-p: 1.6rem;
+  --font-size-nav: 1.6rem;
+  --font-size-hero: 7.2rem;
+  --font-size-h1: 6.4rem;
+  --font-size-h2: 3.6rem;
+  --font-size-h3: 2.4rem;
+  --font-size-h4: 2rem;
+  --font-size-button: 1.6rem;
+  --font-weight-p: 300;
+  --font-weight-nav: 500;
+  --font-weight-headings: 700;
+  --font-weight-subheading: 300;
+  --font-weight-button: 500;
+  --font-line-height: 1.6;
+  --page-container-max-width: 120rem;
+  --section-padding: 8rem;
+  --header-height: 10rem;
+  --header-padding: 2rem;
+  --footer-padding: 2rem;
+  --spacing-1: 0.4rem;
+  --spacing-2: calc(var(--spacing-1) * 2);
+  --spacing-3: calc(var(--spacing-1) * 3);
+  --spacing-4: calc(var(--spacing-1) * 4);
+  --spacing-5: calc(var(--spacing-1) * 5);
+  --spacing-6: calc(var(--spacing-1) * 6);
+  --spacing-7: calc(var(--spacing-1) * 7);
+  --spacing-8: calc(var(--spacing-1) * 8);
 }
 
 html {
-  box-sizing: border-box;
-  /* Load system fonts */
-  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
-  /* Make type rendering look crisper */
-  font-size: 10px;
-  -webkit-font-smoothing: antialiased; /**/
-  /* Disable auto-enlargement of small text in Safari */
-  -moz-osx-font-smoothing: grayscale;
-  /* Enable kerning and optional ligatures */
-  text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family), var(--font-family-backup);
+  font-size: var(--font-size-root);
+  line-height: var(--font-line-height);
+  
+  ::selection {
+    background-color: rgba(var(--color-accent-rgb), 0.7);
+    color: var(--color-background);
+  }
 }
 
-/**
- * Form elements render using OS defaults,
- * so font-family inheritance must be specifically declared
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
+p {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-p);
 }
 
-body {
-  margin: 0;
+h1.hero {
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-headings);
+  
+  & + .h2 {
+    font-weight: var(--font-weight-subheading);
+  }
 }
 
-input {
-  outline: none;
-  background: none;
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-headings);
+  
+  & + .h3 {
+    font-weight: var(--font-weight-subheading);
+  }
 }
 
-ol, ul {
-  list-style: none;
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-headings);
 }
 
-h1, h2, h3, h4, h5, h6, li, ol, p, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-style: normal;
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-headings);
 }
 
-button, input, select, textarea {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  background: none;
-  cursor: pointer;
-  font: inherit;
+h4 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-headings);
 }
 
-:focus {
-  outline: -webkit-focus-ring-color auto 0;
-}
-
-.page {
-  min-height: 300vh;
-  padding-top: 100px;
-  background-color: #ebeced;
-}
-
-body {
-  overflow: hidden;
-}
-
-.body {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: auto;
+small {
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-weight-p);
 }

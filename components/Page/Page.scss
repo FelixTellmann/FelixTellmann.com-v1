@@ -1,0 +1,22 @@
+.page {
+  display: block;
+  
+  > header {
+    padding: var(--header-padding) calc((100% - var(--page-container-max-width)) / 2);
+    margin: 0 auto;
+  }
+  
+  > section {
+    padding: var(--header-padding) calc((100% - var(--page-container-max-width)) / 2);
+    margin: 0 auto;
+  }
+  
+  > footer {
+    padding: var(--footer-padding) calc((100% - var(--page-container-max-width)) / 2);
+    margin: 0 auto;
+  }
+  
+  .text-wrapper {
+    max-width: 768px;
+  }
+}

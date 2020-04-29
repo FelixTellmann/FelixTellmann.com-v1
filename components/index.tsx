@@ -1,1 +1,2 @@
-export * from './Border';
+export * from './Page';
+export * from './Global';

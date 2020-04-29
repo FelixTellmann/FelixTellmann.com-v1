@@ -5,14 +5,13 @@ type BorderProps = {
   loading: boolean
   duration: number
   width: string
-  color: string
 }
 
-export const Border: FC<BorderProps> = ({ loading, duration, width, color }) => {
+export const Border: FC<BorderProps> = ({ loading, duration, width }) => {
   const [loop, setLoop] = useState(loading ? 'infinite' : 1);
   const style: any = {
     '--border-width': `${width}`,
-    '--border-color': `${color}`,
+    '--border-color': `var(--color-accent)`,
     '--border-animation-delay': `${-duration / 2}s`,
     '--border-animation-duration': `${duration}s`,
     '--border-animation-loop': `${loop}`,
