@@ -14,9 +14,9 @@ export const Layout: FC<Props> = ({ pageProps, Component }) => {
     const [loading, setLoading] = useState(false);
 
     const theme: ThemeCSSProperties = {
-        '--color-text': '#252627',
+        '--color-text': '#252627', // #252627
         '--color-text-rgb': '37, 38, 39',
-        '--color-background': '#fafafa',
+        '--color-background': '#fafafa', //fafafa
         '--color-background-rgb': '250, 250, 250',
         '--color-accent': '#e8472b',
         '--color-accent-rgb': '232, 71, 43',
