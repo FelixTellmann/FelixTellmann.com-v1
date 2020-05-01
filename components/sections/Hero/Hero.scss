@@ -38,8 +38,31 @@ section.hero {
   .scroll-down {
     position: absolute;
     bottom: 6rem;
+    
     .scroll-icon {
       fill: var(--color-accent)
+    }
+  }
+  
+  .highlight {
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+      position: relative;
+      color: var(--color-background);
+      transition: color 0.1s;
+      
+      
+      &:before {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        width: 100%;
+        height: 85%;
+        box-shadow: 4px 4px 0px 0px var(--color-text);
+        background: var(--color-accent);
+        transform: rotate(-2deg);
+        transition: 0.1s;
+      }
     }
   }
 }
