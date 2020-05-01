@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import './Page.scss';
-import { Border } from "components/Page/Border";
+import { Border } from "components/global/Border";
 
 type PageProps = {
     loading: boolean

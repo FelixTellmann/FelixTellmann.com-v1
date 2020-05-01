@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import './Header.scss';
 import { FaFacebookF, FaGithub, FaEnvelope, FaRegLightbulb, FaLightbulb } from "react-icons/fa";
-import { Button } from 'components/Global';
+import { Button } from 'components/global';
 
 export const Header: FC = () => {
     return (

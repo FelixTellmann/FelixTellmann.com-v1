@@ -1,2 +1,4 @@
 export * from './Page';
-export * from './Global';
+export * from './global';
+export * from './icons';
+export * from './sections';

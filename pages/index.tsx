@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import './index.scss';
-import { Hero, LogoBanner } from 'components/Page/Sections';
+import { Hero, LogoBanner } from 'components/sections';
 
 function Index(ctx) {
 

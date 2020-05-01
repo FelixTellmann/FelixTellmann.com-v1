@@ -4,7 +4,7 @@ import 'library/reset.css';
 import './_app.scss';
 import { useState, useEffect } from "react";
 import { Page } from "components";
-import { Header } from "components/Page/Sections";
+import { Header } from "components/sections";
 
 export type Props = AppProps
 
