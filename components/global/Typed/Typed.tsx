@@ -48,7 +48,7 @@ export const Typed: FC<TypedProps> = ({ content, ...rest }) => {
                 }
         `}</style>
         <div ref={seoElement} className="typed-text__seo">
-            {content.map(string => <p>{string}</p>)}
+            {content.map((string, i) => <p key={i}>{string}</p>)}
         </div>
         <span style={{ wordBreak: 'keep-all' }} ref={typedElement} className="typed-text" />
     </span>;
