@@ -1,5 +1,7 @@
 section.LogoBanner {
-  opacity: 0.6;
-  background-color: #222222;
-  height: 300px;
+    height: 300px;
+    opacity: 0.6;
+    border-top: 1px solid var(--color-text);
+    border-bottom: 1px solid var(--color-text);
+    background-color: var(--color-background);
 }

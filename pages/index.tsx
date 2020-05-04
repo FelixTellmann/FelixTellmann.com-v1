@@ -8,6 +8,7 @@ function Index(ctx) {
         <Fragment>
             <Hero />
             <LogoBanner />
+            <Hero />
         </Fragment>
 
     );

@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useRef } from "react";
 import './Hero.scss';
 import { Mouse } from 'components/icons';
-import { Typed } from 'components/global';
+import { Button, Typed } from 'components/global';
 
 export const Hero: FC = () => {
 
@@ -13,7 +13,7 @@ export const Hero: FC = () => {
 
     return (
         <section className="hero">
-            <div className="text-wrapper">
+            <div className="hero__content">
                 <h1 className="hero">
                     Hi, I'm <span className="highlight">Felix</span>. <br />
                     <Typed content={content}
@@ -23,6 +23,9 @@ export const Hero: FC = () => {
                            loop={true}
                            cursorChar={'|'} />
                 </h1>
+{/*                <div className="hero__cta">
+                    <Button>Get in Touch</Button>
+                </div>*/}
             </div>
             <a href="#" className="scroll-down">
                 <Mouse />
