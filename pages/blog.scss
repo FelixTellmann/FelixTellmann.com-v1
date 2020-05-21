@@ -1,0 +1,14 @@
+section.blog {
+    position: relative;
+    min-height: 60rem;
+    display: flex;
+    justify-content: center;
+
+
+    .blog__content {
+        margin: 100px 0;
+        width: 768px;
+        min-height: 28rem;
+    }
+}
+

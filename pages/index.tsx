@@ -9,8 +9,8 @@ function Index(ctx) {
     return (
         <Fragment>
             <Hero />
-            <LogoBanner />
-            <Hero />
+            {/*<LogoBanner />
+            <Hero />*/}
         </Fragment>
 
     );

@@ -20,6 +20,12 @@ module.exports = withSass(withCSS({
     config.resolve.alias['static'] = path.join(__dirname, 'public');
     config.resolve.alias['library'] = path.join(__dirname, 'library');
 
+    config.plugins.push(
+      new MonacoWebpackPlugin({
+        languages: ["javascript", "typescript"],
+        filename: "static/[name].worker.js"
+      })
+    )
     return config;
   },
 }));

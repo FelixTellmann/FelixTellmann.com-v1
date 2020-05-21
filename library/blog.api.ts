@@ -6,8 +6,6 @@ import remarkSlug from 'remark-slug';
 import highlight from 'remark-highlight.js';
 import html from 'remark-html';
 import headings from 'remark-autolink-headings';
-
-
 const postsDirectory = join(process.cwd(), 'blog');
 
 export function getPostSlugs() {
