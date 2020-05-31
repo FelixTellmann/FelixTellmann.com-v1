@@ -66,6 +66,8 @@
     "remark-highlight.js": "^6.0.0",
     "remark-html": "^11.0.1",
     "remark-parse": "^8.0.2",
+    "remark-react": "^7.0.1",
+    "remark-react-codemirror": "^1.1.1",
     "remark-slug": "^6.0.0",
     "serverless-mysql": "*",
     "ts-jest": "*",

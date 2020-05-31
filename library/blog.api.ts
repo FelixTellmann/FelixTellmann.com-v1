@@ -6,6 +6,8 @@ import remarkSlug from 'remark-slug';
 import highlight from 'remark-highlight.js';
 import html from 'remark-html';
 import headings from 'remark-autolink-headings';
+import remark2react from 'remark-react';
+
 const postsDirectory = join(process.cwd(), 'blog');
 
 export function getPostSlugs() {
@@ -28,7 +30,7 @@ export function getPostBySlug(slug, fields = []) {
         if (field === 'content') {
             items[field] = (
                 await remark()
-                    .use(remarkSlug)
+                    .use(remark2react)
                     .use(headings)
                     .use(highlight)
                     .use(html)
