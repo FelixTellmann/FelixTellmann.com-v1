@@ -18,7 +18,6 @@ type TypedProps = {
 
 }
 
-
 export const Typed: FC<TypedProps> = ({ content, ...rest }) => {
     let typedElement = useRef();
     let seoElement = useRef();

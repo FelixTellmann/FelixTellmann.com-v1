@@ -9,7 +9,7 @@ type PageProps = {
 export const Page: FC<PageProps> = ({ children, loading }) => {
     return (
         <div className="page">
-            <Border loading={loading} width="7px" duration={3} />
+           {/* <Border loading={loading} width="7px" duration={3} />*/}
             {children}
         </div>
     );

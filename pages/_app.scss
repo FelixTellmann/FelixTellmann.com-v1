@@ -16,7 +16,7 @@
     --font-size-h2: 3.6rem;
     --font-size-h3: 2.4rem;
     --font-size-h4: 2rem;
-    --font-size-button: 1.6rem;
+    --font-size-button: 1.4rem;
     --font-weight-p: 400;
     --font-weight-nav: 500;
     --font-weight-headings: 700;
@@ -25,7 +25,7 @@
     --font-line-height: 1.6;
     --page-container-max-width: 120rem;
     --section-padding: 8rem;
-    --header-height: 10rem;
+    --header-height: 8rem;
     --header-padding: 2rem;
     --footer-padding: 2rem;
     --spacing-1: 0.4rem;
@@ -44,7 +44,6 @@ html {
     font-family: var(--font-family), var(--font-family-backup);
     font-size: var(--font-size-root);
     line-height: var(--font-line-height); // calc(2px + 2ex + 2px);
-    margin-left: calc(100vw - 100%);
 
     ::selection {
         background-color: rgba(var(--color-accent-rgb), 0.7);

@@ -1,9 +1,6 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const path = require('path');
-const MonacoWebpackPlugin = require("monaco-editor-webpack-plugin");
-// This helper function is not strictly necessary.
-// I just don't like repeating the path.join a dozen times.
 
 module.exports = withSass(withCSS({
   webpack(config, { defaultLoaders }) {
@@ -20,12 +17,6 @@ module.exports = withSass(withCSS({
     config.resolve.alias['static'] = path.join(__dirname, 'public');
     config.resolve.alias['library'] = path.join(__dirname, 'library');
 
-    config.plugins.push(
-      new MonacoWebpackPlugin({
-        languages: ["javascript", "typescript"],
-        filename: "static/[name].worker.js"
-      })
-    )
     return config;
   },
 }));
