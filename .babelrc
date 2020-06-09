@@ -3,6 +3,14 @@
     "next/babel"
   ],
   "plugins": [
-    "inline-react-svg"
+    "inline-react-svg",
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "static": "./public"
+        }
+      }
+    ]
   ]
 }

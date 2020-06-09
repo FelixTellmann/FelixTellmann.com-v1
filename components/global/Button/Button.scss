@@ -9,10 +9,9 @@
     color: var(--color-background);
     text-align: center;
     transition: position ease-in 0.2s;
- 
+
     .button__content {
         position: relative;
-        z-index: 2;
         top: -4px;
         left: -4px;
         font-size: var(--font-size-button);
@@ -24,7 +23,6 @@
     &:before {
         position: absolute;
         content: '';
-        z-index: 1;
         top: -4px;
         left: -4px;
         width: calc(100% + 2px);
@@ -36,7 +34,6 @@
     &:after {
         position: absolute;
         content: '';
-        z-index: 2;
         top: -4px;
         left: -4px;
         width: 0;

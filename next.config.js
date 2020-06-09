@@ -9,8 +9,8 @@ module.exports = withSass(withCSS({
       use: {
         loader: 'url-loader',
       },
-    });/*
-    config.resolve.extensions = [".ts", ".js", ".jsx", ".tsx", ".svg"];*/
+    });
+    config.resolve.extensions = [".ts", ".js", ".jsx", ".tsx", ".svg"];
     config.resolve.alias['components'] = path.join(__dirname, 'components');
     config.resolve.alias['pages'] = path.join(__dirname, 'pages');
     config.resolve.alias['/'] = path.join(__dirname, 'public');
