@@ -24,8 +24,16 @@
     --font-weight-subheading: 300;
     --font-weight-button: 500;
     --font-line-height: 1.6;
-    --page-container-max-width: 120rem;
-    --section-padding: 8rem;
+    --container-width: 100rem;
+    --padding-0: 0rem;
+    --padding-1: 4.8rem;
+    --padding-2: 9.6rem;
+    --padding-3: 12.8rem; // 4.8rem on mobile 8.4rem
+    --padding-4: 17rem; // 8.4
+    @include responsive('small') {
+        --padding-3: 4.8rem; // 4.8rem on mobile 8.4rem
+        --padding-4: 8.4rem; // 8.4
+    }
     --header-height: 8rem;
     --header-padding: 1rem;
     --header-border-bottom: rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset;

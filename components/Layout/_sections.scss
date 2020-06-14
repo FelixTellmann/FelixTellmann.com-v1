@@ -9,7 +9,7 @@ body {
     width: 100%;
 
     .section__wrapper {
-        width: var(--page-container-max-width);
+        width: var(--container-width);
         margin: 0 auto;
     }
 
@@ -131,7 +131,7 @@ body {
     .nav-icon {
         position: absolute;
         z-index: 2100;
-        right: calc((100% - var(--page-container-max-width)) / 2);
+        right: calc((100% - var(--container-width)) / 2);
         height: 24px;
         display: flex;
         align-items: center;

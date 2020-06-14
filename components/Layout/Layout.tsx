@@ -12,7 +12,7 @@ type ThemeProps = {
   loading: boolean
 }
 
-export const Theme: FC<ThemeProps> = ({ children, loading }) => {
+export const Frame: FC<ThemeProps> = ({ children, loading }) => {
   
   const theme: ThemeCSSProperties = {
     "--color-text": "#252627", // #252627
