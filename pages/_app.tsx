@@ -17,7 +17,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
   return (
     <>
       <Loading loading={loading} width="7px" duration={3} />
-      <Section width="auto" padding={3}>Hello</Section>
+      {/*<Section width="auto" padding={3}>Hello</Section>*/}
       {/*
         <Header >
           -Link to Logo
