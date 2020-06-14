@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.scss';
-import { Hero, LogoBanner } from 'components/sections';
+import { Hero, LogoBanner } from 'components/Section';
 
 console.log('asd'); /*?*/
 

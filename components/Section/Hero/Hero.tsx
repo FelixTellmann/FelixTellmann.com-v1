@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useRef } from "react";
 import './Hero.scss';
-import { Mouse } from 'components/icons';
-import { Button, Typed } from 'components/global';
+import { Mouse } from 'components/Icons';
+import { Loading, Typed } from 'components';
 
 export const Hero: FC = () => {
 

@@ -1,5 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
-import './Border.scss';
+import './Loading.scss';
 
 type BorderProps = {
   loading: boolean
@@ -7,7 +7,7 @@ type BorderProps = {
   width: string
 }
 
-export const Border: FC<BorderProps> = ({ loading, duration, width }) => {
+export const Loading: FC<BorderProps> = ({ loading, duration, width }) => {
   const [loop, setLoop] = useState(loading ? 'infinite' : 1);
   const style: any = {
     '--border-width': `${width}`,

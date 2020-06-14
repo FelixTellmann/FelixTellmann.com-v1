@@ -1,5 +1,8 @@
-import App, { AppProps } from 'next/app';
-import React, { FC, Fragment, CSSProperties } from 'react';
+import App, { AppProps } from "next/app";
+import React, { FC, Fragment, CSSProperties } from "react";
+import 'styles/reset.css';
+import "styles/typography.scss";
+
 
 import { useState, useEffect } from "react";
 import { Theme } from "components";
@@ -9,13 +12,13 @@ export type Props = AppProps
 export type ThemeCSSProperties = CSSProperties & any
 
 export const Root: FC<Props> = ({ pageProps, Component }) => {
-    const [loading, setLoading] = useState(false);
-
-    return (
-      <Theme loading={false}>
-          <Component {...pageProps} />
-      </Theme>
-    );
+  const [loading, setLoading] = useState(false);
+  
+  return (
+    <Theme loading={false}>
+      <Component {...pageProps} />
+    </Theme>
+  );
 };
 
 /*Layout.getInitialProps = async (appContext) => {

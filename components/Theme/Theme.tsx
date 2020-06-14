@@ -1,13 +1,11 @@
 import React, { FC, useEffect, useState, useRef } from "react";
-import './_reset.css';
-import './_typography.scss';
 import './_sections.scss';
-import { Border } from "components/global/Border";
+import { Loading } from "components/Loading";
 import Link from "next/link";
-import Logo from "static/logo-new.svg";
+import Logo from "public/logo-new.svg";
 import { FaFacebookF, FaGithub, FaRegLightbulb } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/Io";
-import { Button } from "components/global";
+import { Button } from "components";
 import { useGlobalEvent, useMouseEvents } from "beautiful-react-hooks";
 import { ThemeCSSProperties } from "pages/_app";
 
@@ -105,7 +103,7 @@ export const Theme: FC<ThemeProps> = ({ children, loading }) => {
 
     return (
       <>
-          <Border loading={loading} width="7px" duration={3} />
+          <Loading loading={loading} width="7px" duration={3} />
           <section className="section section--header" ref={headerSectionRef}>
               <header className={`header section__wrapper ${!openNavMenu && headerOnScroll ? 'scrolled-down' : ''}`}>
                   <Link href="/">

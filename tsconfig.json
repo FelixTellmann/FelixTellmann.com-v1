@@ -31,8 +31,11 @@
       "/*": [
         "public/*"
       ],
-      "static/*": [
+      "public/*": [
         "public/*"
+      ],
+      "styles/*": [
+        "styles/*"
       ]
     }
   },
