@@ -5,3 +5,5 @@ export * from "./Icons";
 export * from "./Button/Button";
 export * from "./Typed/Typed";
 export * from "./Container/Container";
+export * from "./Wrapper/Wrapper";
+export * from "./Spacer/Spacer";

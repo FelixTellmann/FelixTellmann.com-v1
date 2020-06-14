@@ -26,10 +26,11 @@
     --font-line-height: 1.6;
     --container-width: 100rem;
     --padding-0: 0rem;
-    --padding-1: 4.8rem;
-    --padding-2: 9.6rem;
-    --padding-3: 12.8rem; // 4.8rem on mobile 8.4rem
-    --padding-4: 17rem; // 8.4
+    --padding-1: 2.4rem;
+    --padding-2: 4.8rem;
+    --padding-3: 9.6rem;
+    --padding-4: 12.8rem; // 4.8rem on mobile 8.4rem
+    --padding-5: 17rem; // 8.4
     @include responsive('small') {
         --padding-3: 4.8rem; // 4.8rem on mobile 8.4rem
         --padding-4: 8.4rem; // 8.4

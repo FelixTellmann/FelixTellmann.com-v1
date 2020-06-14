@@ -1,15 +1,13 @@
 import { FC } from "react";
-import { Container } from "components";
 
 type SectionProps = {
-  padding: 0 | 1 | 2 | 3 | 4 | string
-  width?: "auto" | string
+  padding: 0 | 1 | 2 | 3 | 4 | 5 | string
   background?: string
   id?: string
   className?: string
 }
 
-export const Section: FC<SectionProps> = ({ children, width, background, padding, id = "", className = "" }) => {
+export const Section: FC<SectionProps> = ({ children, background, padding, id = "", className = "" }) => {
   
   return (
     <>
@@ -21,13 +19,7 @@ export const Section: FC<SectionProps> = ({ children, width, background, padding
             ${background ? `background: ${background};` : ""};
         }
       `}</style>
-      <section id={id} className={`section ${className}`}>
-        {
-          width
-          ? <Container width={width !== "auto" && width}>{children}</Container>
-          : children
-        }
-      </section>
+      <section id={id} className={`section ${className}`}>{children}</section>
     </>
   );
 };

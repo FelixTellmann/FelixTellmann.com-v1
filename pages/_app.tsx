@@ -5,7 +5,7 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import { Frame, Loading, Section } from "components";
+import { Container, Spacer, Loading, Section } from "components";
 
 export type Props = AppProps
 
@@ -17,7 +17,10 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
   return (
     <>
       <Loading loading={loading} width="7px" duration={3} />
-      <Section width="auto" padding={3}>Hello</Section>
+      <Section padding={4}>
+        <Container width={"auto"}>asd</Container>
+        <Spacer />
+      </Section>
       {/*
         <Header >
           -Link to Logo

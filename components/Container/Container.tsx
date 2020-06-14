@@ -1,7 +1,8 @@
 import { CSSProperties, FC } from "react";
+import { Wrapper } from "components/Wrapper/Wrapper";
 
 type ContainerProps = {
-  width?: string
+  width?: "auto" | string
 }
 export const Container: FC<ContainerProps> = ({ children, width }) => {
   return (
@@ -9,16 +10,25 @@ export const Container: FC<ContainerProps> = ({ children, width }) => {
       { /*language=SCSS*/}
       <style jsx>{`
           .container {
-            padding-right: 24px;
-            padding-left: 24px;
-            max-width: 100%;
-            margin-right: auto;
-            margin-left: auto;
-            ${width ? `width: ${width};` : `width: var(--container-width)`}
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              min-width: 1px;
+              max-width: 100%;
+              flex: var(--flex);
+              justify-content: var(--justify-content);
+              align-items: var(--align-items);
           }
       `}</style>
-      <div className="container">{children}</div>
+      
+      {
+        width
+        ? <Wrapper width={width !== "auto" && width}>
+          <div className="container">{children}</div>
+        </Wrapper>
+        : <div className="container">{children}</div>
+      }
+    
     </>
-  
   );
 };
