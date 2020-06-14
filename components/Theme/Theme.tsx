@@ -3,7 +3,7 @@ import { Button, Loading } from "components";
 import Link from "next/link";
 import Logo from "public/logo-new.svg";
 import { FaFacebookF, FaGithub, FaRegLightbulb } from "react-icons/fa";
-import { IoMdMenu } from "react-icons/Io";
+import { IoMdMenu } from "react-icons/io";
 import { useGlobalEvent, useMouseEvents } from "beautiful-react-hooks";
 import { ThemeCSSProperties } from "pages/_app";
 import "./_sections.scss";
