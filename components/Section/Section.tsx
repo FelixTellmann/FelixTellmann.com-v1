@@ -11,11 +11,10 @@ export const Section: FC<SectionProps> = ({ children, background, padding, id = 
   
   return (
     <>
-      { /*language=SCSS*/}
       <style jsx>{`
         .section {
             padding-top: ${typeof padding === "number" ? `var(--padding-${padding})` : padding};
-            padding-bottom: ${typeof padding === "number" ? `var(--padding-${padding})` : padding};
+            padding-bottom:  ${typeof padding === "number" ? `var(--padding-${padding})` : padding};
             ${background ? `background: ${background};` : ""};
         }
       `}</style>

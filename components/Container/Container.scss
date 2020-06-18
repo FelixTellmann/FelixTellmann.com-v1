@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  min-width: 1px;
+  max-width: 100%;
+  display: flex;
+  align-items: var(--align-items);
+  flex: var(--flex);
+  justify-content: var(--justify-content);
+  @include responsive('mobile') {
+    flex-direction: var(--flex-direction-mobile);
+  }
+  @include responsive('tablet') {
+    flex-direction: var(--flex-direction-tablet);
+  }
+  @include responsive('desktop') {
+    flex-direction: var(--flex-direction-desktop);
+  }
+}
+

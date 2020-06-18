@@ -1,5 +1,6 @@
 import App, { AppProps } from "next/app";
 import React, { FC, Fragment, CSSProperties } from "react";
+
 import "styles/reset.css";
 import "styles/typography.scss";
 import "styles/theme.scss";
@@ -18,7 +19,8 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
     <>
       <Loading loading={loading} width="7px" duration={3} />
       <Section padding={4}>
-        <Container width={"auto"}>asd</Container>
+        <Container wrapper direction={["column", "row", "row"]} center>
+        </Container>
         <Spacer />
       </Section>
       {/*

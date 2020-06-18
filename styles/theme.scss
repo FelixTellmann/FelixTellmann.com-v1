@@ -1,4 +1,6 @@
 :root {
+    --desktop: 1000px;
+    --mobile: 600px;
     --color-text: #252627; // #252627
     --color-text-rgb: 37, 38, 39;
     --color-background: #fafafa; //#fafafa
@@ -6,8 +8,8 @@
     --color-accent: #e8472b;
     --color-accent-rgb: 232, 71, 43;
     --font-family: Inter;
-    --font-family-blog-content: "Roboto Slab";
-    --font-family-backup: "-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, sans-serif";
+    --font-family-blog-content: 'Roboto Slab';
+    --font-family-backup: '-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, sans-serif';
     --font-size-root: 10px;
     --font-size-smaller: 1.2rem;
     --font-size-p: 1.6rem;
@@ -25,6 +27,75 @@
     --font-weight-button: 500;
     --font-line-height: 1.6;
     --container-width: 100rem;
+
+    /* Type Options
+
+   h1
+    --size:  4.5rem;
+    --size-t:  4rem;
+    --size-m:  2.5rem;
+
+    h2
+    --size:  3.5rem;
+    --size-t:  3rem;
+    --size-m:  2rem;
+
+    h3
+    --size:  2.5rem;
+    --size-t:  2rem;
+    --size-m:  1.75rem;
+
+    h5 - subheading to h1 & h2
+    --size:  1.5rem;
+    --size-t:  1.25rem;
+    --size-m:  1rem;
+
+    small
+    --size:  1rem;
+
+    xsmall
+    --size:  0.875rem;
+
+    highlight
+    font-size: calc(58px + 22 * ((100vw - 320px) / 1120));
+
+    p - Subheading for h5
+    --size:  1.25rem;
+    --size-t:  1rem;
+    --size-m:  1rem;
+
+    */
+
+
+    /*spacing Options
+    --geist-space: 4px;
+    --geist-space-2x: 8px;
+    --geist-space-4x: 16px;
+    --geist-space-8x: 32px;
+    --geist-space-16x: 64px;
+    --geist-space-32x: 128px;
+    --geist-space-small: 32px;
+    --geist-space-medium: 40px;
+    --geist-space-large: 48px;
+    --geist-space-gap: 24px;
+    --geist-space-gap-half: 12px;
+    --gap-ratio
+    --geist-space-gap-quarter: var(--geist-space-2x);
+    --geist-gap: var(--geist-space-gap);
+        --geist-page-margin: var(--geist-space-gap);
+    --geist-page-width: 1000px;
+    --geist-page-width-with-margin: 1048px;
+    --geist-radius: 5px;
+    --geist-marketing-radius: 8px;
+*/
+   /* Shadow Options
+   --shadow-smallest: 0px 4px 8px rgba(0,0,0,0.12);
+    --shadow-small: 0 5px 10px rgba(0,0,0,0.12);
+    --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+    --shadow-large: 0 30px 60px rgba(0,0,0,0.12);
+    --shadow-hover: 0 30px 60px rgba(0,0,0,0.12);
+    --shadow-sticky: 0 12px 10px -10px rgba(0,0,0,0.12);
+*/
     --padding-0: 0rem;
     --padding-1: 2.4rem;
     --padding-2: 4.8rem;
