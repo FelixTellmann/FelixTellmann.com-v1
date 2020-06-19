@@ -1,4 +1,5 @@
 import { FC } from "react";
+import './Spacer.scss';
 
 type SpacerProps = {
   x?: number

@@ -1,4 +1,4 @@
-import { FC, createElement, StyleHTMLAttributes } from "react";
+import { FC, createElement, StyleHTMLAttributes, CSSProperties } from "react";
 import "./TextItem.scss";
 
 type TextItemProps = {
@@ -12,33 +12,39 @@ type TextItemProps = {
   p?: boolean;
   span?: boolean
   small?: boolean;
+  
   /*css*/
   bold?: boolean
   weight?: "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
   lineHeight?: number | string
-  uppercase?:boolean
+  uppercase?: boolean
   center?: boolean
   maxWidth?: string
   noMargin?: boolean
-  seconddary?: boolean
-  style?: any
+  y?: number
+  x?: number
+  style?: CSSProperties
   /*attributes*/
   onClick?: Function
   id?: string
   className?: string
-  
   /*actions*/
+  
+  secondary?: boolean
   
 }
 
-export const TextItem: FC<TextItemProps> = (props) => {
-  
-  const elements = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "small", "span"];
+export const TextItem: FC<TextItemProps> = (props, { style = {} }) => {
+  const { lineHeight, uppercase, center, maxWidth, noMargin, secondary, x, y } = props;
+  const elements = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "small"];
   let element = "";
-  let style = {
-    textAlign: 'center',
-    maxWidth: '140px'
-  }
+  
+  uppercase && (style["textTransform"] = "uppercase");
+  lineHeight && (style["lineHeight"] = lineHeight);
+  center && (style["textAlign"] = "center");
+  maxWidth && (style["maxWidth"] = maxWidth);
+  noMargin && (style["marginTop"] = 0, style["marginBottom"] = 0);
+  (y || x) && (style["padding"] = `calc(var(--gap) * var(--gap-ratio-y)) calc(var(--gap) * var(--gap-ratio-x))`, style["--gap-ratio-y"] = y || 0, style["--gap-ratio-x"] = x || 0);
   
   for (let key in props) {
     if (props.hasOwnProperty(key) && elements.includes(key)) {

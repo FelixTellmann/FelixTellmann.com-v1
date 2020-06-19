@@ -94,7 +94,11 @@ font-size: calc(5.8rem + 22 * ((100vw - 32rem) / 1120));
   /*================ Spacing ================*/
   --gap: 2.4rem;
 
-  * { --gap-ratio: 1;}
+  * {
+    --gap-ratio: 1;
+    --gap-ratio-y: 1;
+    --gap-ratio-x: 1;
+  }
 
   --space-1x: 0.4rem;
   --space-2x: 0.8rem;

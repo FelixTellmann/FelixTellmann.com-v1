@@ -20,8 +20,8 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       <Loading loading={loading} width="7px" duration={3} />
       <Section padding={4}>
         <Container wrapper direction={["column", "row", "column"]}>
-          <TextItem h2 h1 >asd</TextItem>
-          <TextItem h3 className='welcome' style={{width: '140px'}}>asdasd</TextItem>
+          <TextItem h2 h1 uppercase noMargin x={5} y={2}>asd</TextItem>
+          <TextItem h3 className="welcome" style={{ width: "140px" }}>asdasd</TextItem>
         </Container>
         <Spacer />
       </Section>
