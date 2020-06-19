@@ -11,6 +11,8 @@
   --font-family-blog-content: 'Roboto Slab';
   --font-family-backup: '-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, sans-serif';
   --font-size-root: 10px;
+  --size-highlight: calc(5.8rem + 22 * ((100vw - 32rem) / 1120));
+;
 }
 
 h1 { --size: 7.2rem; --size-t: 6.4rem; --size-m: 4rem;}
@@ -47,43 +49,6 @@ small { --size: 1.4rem; --size-t: 1.4rem; --size-m: 1.4rem;}
   --font-line-height: 1.5em;
   /* Type Options
 
-h1
---size: 7.2rem;
---size-t: 6.4rem;
---size-m: 4rem;
-
-h2
---size: 5.6rem;
---size-t: 4.8rem;
---size-m: 3.2rem;
-
-h3
---size: 4rem;
---size-t: 3.2rem;
---size-m: 2.8rem;
-
-h5 - subheading to h1 & h2
---size: 2.4rem;
---size-t: 2rem;
---size-m: 1.6rem;
-
-p - Subheading for h5
---size: 2rem;
---size-t: 1.6rem;
---size-m: 1.6rem;
-
-
-small
---size: 1.6rem;
-
-xsmall
---size: 1.4rem;
-
-highlight
-font-size: calc(5.8rem + 22 * ((100vw - 32rem) / 1120));
-
-
-  */
   /*================ Frame, Header, Footer ================*/
   --frame-width: 100rem;
   --frame-padding: var(--gap);

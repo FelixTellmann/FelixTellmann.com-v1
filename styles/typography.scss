@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, p, small {
   @include responsive('mobile') {
     font-size: var(--size-m)
   }
+
+  &.highlight {
+    font-size: var(--size-highlight);
+  }
 }
 
 h1.hero {

@@ -17,6 +17,7 @@ type TextItemProps = {
   bold?: boolean
   weight?: "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
   lineHeight?: number | string
+  highlight?: boolean
   uppercase?: boolean
   center?: boolean
   maxWidth?: string
@@ -35,11 +36,12 @@ type TextItemProps = {
 }
 
 export const TextItem: FC<TextItemProps> = (props, { style = {} }) => {
-  const { lineHeight, uppercase, center, maxWidth, noMargin, secondary, x, y } = props;
+  const { lineHeight, highlight, uppercase, center, maxWidth, noMargin, secondary, x, y } = props;
   const elements = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "small"];
   let element = "";
   
   uppercase && (style["textTransform"] = "uppercase");
+  highlight && (style["fontSize"] = "var(--size-highlight)");
   lineHeight && (style["lineHeight"] = lineHeight);
   center && (style["textAlign"] = "center");
   maxWidth && (style["maxWidth"] = maxWidth);
@@ -53,5 +55,5 @@ export const TextItem: FC<TextItemProps> = (props, { style = {} }) => {
     }
   }
   
-  return element && createElement(element, { style }, props.children)
+  return element && createElement(element, { style }, props.children);
 };

@@ -30,8 +30,8 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       </Section>
       <Component {...pageProps} />
       <Section spacing={2}>
-        <Container wrapper className="hero__content" vcenter maxWidth={"500px"}>
-          <TextItem h1>
+        <Container wrapper className="hero__content" vcenter maxWidth={"800px"}>
+          <TextItem h2 highlight>
             Hi, I'm <span className="highlight">Felix</span>. <br />
             <Typed content={content}
                    typeSpeed={40}
