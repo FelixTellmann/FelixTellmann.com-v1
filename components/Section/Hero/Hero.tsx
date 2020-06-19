@@ -19,8 +19,8 @@ export const Hero: FC = () => {
           <Typed content={content}
                  typeSpeed={40}
                  backSpeed={17}
-                 backDelay={1850}
-                 loop={true}
+                 backDelay={1850}/**/
+                 loop
                  cursorChar={"|"} />
         </h1>
       </div>

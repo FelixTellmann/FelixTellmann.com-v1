@@ -1,0 +1,18 @@
+.typed-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.typed-text__item {
+  height: 100%;
+  flex: 1;
+  white-space: pre;
+}
+
+.typed-text__seo {
+  width: 1px;
+  height: 100%;
+  overflow: hidden;
+  white-space: pre;
+}

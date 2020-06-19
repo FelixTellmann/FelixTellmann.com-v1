@@ -53,11 +53,5 @@ export const TextItem: FC<TextItemProps> = (props, { style = {} }) => {
     }
   }
   
-  return (
-    <>
-      {
-        element && createElement(element, { style }, props.children)
-      }
-    </>
-  );
+  return element && createElement(element, { style }, props.children)
 };

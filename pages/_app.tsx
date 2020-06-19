@@ -6,53 +6,56 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import { Container, Spacer, Loading, Section, TextItem } from "components";
+import { Container, Spacer, Loading, Section, TextItem, Typed } from "components";
 
 export type Props = AppProps
 
-export type ThemeCSSProperties = CSSProperties & any
-
 export const Root: FC<Props> = ({ pageProps, Component }) => {
   const [loading, setLoading] = useState(false);
-  
+  const content = [
+    `I build beautiful <br>websites.`,
+    /*`I help people <br>succeed online.`,
+    `I teach &amp; write <br>about code.`,*/
+  ];
   return (
     <>
       <Loading loading={loading} width="7px" duration={3} />
-      <Section padding={4}>
-        <Container wrapper direction={["column", "row", "column"]}>
-          <TextItem h2 h1 uppercase noMargin x={5} y={2}>asd</TextItem>
-          <TextItem h3 className="welcome" style={{ width: "140px" }}>asdasd</TextItem>
+      <Section spacing={2} className="header" id="header">
+        <Container wrapper>
+          {/*<Logo />
+          <Nav />
+          <SocialNav />
+          <Button />*/}
         </Container>
-        <Spacer />
       </Section>
-      {/*
-        <Header >
-          -Link to Logo
-          -Navigation Name & Link
-          -Icon Name & Link
-          -CTA Link text & Action/link
-        </Header>
-      */}
-      {/*
-        <Main>
-      */}
       <Component {...pageProps} />
-      {/*
-        </main>
-      */}
-      {/*
-          <Footer>
-           - navigation Name & Url
-           - Icons name & link
-           - CTA
-           - Any Other info
-          </Footer
-          */}
+      <Section spacing={2}>
+        <Container wrapper className="hero__content" vcenter maxWidth={"500px"}>
+          <TextItem h1>
+            Hi, I'm <span className="highlight">Felix</span>. <br />
+            <Typed content={content}
+                   typeSpeed={40}
+                   backSpeed={17}
+                   backDelay={1850}/**/
+                   loop
+                   cursorChar={"|"} />
+          </TextItem>
+        </Container>
+      </Section>
+      <Section spacing={2} className="footer" id="footer" background={"#323232"}>
+        <Container wrapper>
+          {/*<Nav />
+          <SocialNav />
+          <SignUp />
+          <Copyright />*/}
+        </Container>
+      </Section>
+    
     </>
   );
 };
-
-/*Layout.getInitialProps = async (appContext) => {
+/*
+Root.getInitialProps = async (appContext) => {
     // calls page's `getInitialProps` and fills `appProps.pageProps`
     const appProps = await App.getInitialProps(appContext);
     return { ...appProps };

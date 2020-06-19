@@ -1,21 +1,25 @@
 import { FC } from "react";
+import "./Section.scss";
 
 type SectionProps = {
-  padding: 0 | 1 | 2 | 3 | 4 | 5 | string
+  top?: number
+  bottom?: number
+  spacing?: number
   background?: string
   id?: string
   className?: string
 }
 
-export const Section: FC<SectionProps> = ({ children, background, padding, id = "", className = "" }) => {
+export const Section: FC<SectionProps> = ({ children, background, top = 3, bottom = 3, spacing, id = "", className = "" }) => {
   
+  spacing && (top = spacing, bottom = spacing);
   return (
     <>
       <style jsx>{`
         .section {
-            padding-top: ${typeof padding === "number" ? `var(--padding-${padding})` : padding};
-            padding-bottom:  ${typeof padding === "number" ? `var(--padding-${padding})` : padding};
-            ${background ? `background: ${background};` : ""};
+          --gap-ratio-top: ${top};
+          --gap-ratio-bottom: ${bottom};
+          ${background ? `background: ${background};` : ""};
         }
       `}</style>
       <section id={id} className={`section ${className}`}>{children}</section>

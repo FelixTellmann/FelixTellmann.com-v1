@@ -4,6 +4,7 @@ import "./Container.scss";
 
 type ContainerProps = {
   wrapper?: boolean | string
+  maxWidth?: string
   id?: string
   className?: string
   direction?: ("row" | "column" | string)[]
@@ -19,6 +20,7 @@ type ContainerProps = {
 export const Container: FC<ContainerProps> = (
   {
     children,
+    maxWidth,
     wrapper,
     direction = ["column", "column", "column"],
     align = "stretch",
@@ -66,7 +68,7 @@ export const Container: FC<ContainerProps> = (
       </style>
       {
         wrapper
-        ? <Wrapper width={typeof wrapper === "string" && wrapper}>
+        ? <Wrapper width={maxWidth && maxWidth}>
           <div id={id} className={`container ${className}`}>{children}</div>
         </Wrapper>
         : <div id={id} className={`container ${className}`}>{children}</div>

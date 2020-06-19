@@ -1,0 +1,7 @@
+.section {
+  overflow: hidden;
+  padding-top: calc(var(--gap) * var(--gap-ratio-top));
+  padding-bottom: calc(var(--gap) * var(--gap-ratio-bottom));
+  --gap-ratio-top: var(--gap-ratio);
+  --gap-ratio-bottom: var(--gap-ratio);
+}
