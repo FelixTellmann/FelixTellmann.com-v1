@@ -6,7 +6,7 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import { Container, Spacer, Loading, Section } from "components";
+import { Container, Spacer, Loading, Section, TextItem } from "components";
 
 export type Props = AppProps
 
@@ -19,8 +19,9 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
     <>
       <Loading loading={loading} width="7px" duration={3} />
       <Section padding={4}>
-        <Container wrapper direction={["column", "row", "row"]} center>
-          <h3>test</h3>
+        <Container wrapper direction={["column", "row", "column"]}>
+          <TextItem h2 h1 >asd</TextItem>
+          <TextItem h3 className='welcome' style={{width: '140px'}}>asdasd</TextItem>
         </Container>
         <Spacer />
       </Section>

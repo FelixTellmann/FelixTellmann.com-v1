@@ -7,3 +7,4 @@ export * from "./Typed/Typed";
 export * from "./Container/Container";
 export * from "./Wrapper/Wrapper";
 export * from "./Spacer/Spacer";
+export * from "./TextItem/TextItem";
