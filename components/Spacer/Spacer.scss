@@ -1,0 +1,9 @@
+.spacer {
+  width: 1px;
+  height: 1px;
+  display: block;
+  padding-top: calc(var(--gap) * var(--gap-ratio-y));
+  padding-left: calc(var(--gap) * var(--gap-ratio-x));
+  --gap-ratio-x: var(--gap-ratio);
+  --gap-ratio-y: var(--gap-ratio);
+}

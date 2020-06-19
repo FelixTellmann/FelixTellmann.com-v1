@@ -50,6 +50,7 @@ export const Container: FC<ContainerProps> = (
   if (full) {
     flex = 1;
   }
+  
   return (
     <>
       <style jsx>{`
@@ -57,9 +58,9 @@ export const Container: FC<ContainerProps> = (
           --align-items: ${align};
           --flex: ${flex};
           --justify-content: ${justify};
-          --flex-direction-mobile: ${direction[0]};
-          --flex-direction-tablet: ${direction[1]};
-          --flex-direction-desktop: ${direction[2]};
+          --flex-direction: ${direction[2]};
+          --flex-direction-t: ${direction[1]};
+          --flex-direction-m: ${direction[0]};
         }
     `}
       </style>
@@ -70,7 +71,6 @@ export const Container: FC<ContainerProps> = (
         </Wrapper>
         : <div id={id} className={`container ${className}`}>{children}</div>
       }
-    
     </>
   );
 };

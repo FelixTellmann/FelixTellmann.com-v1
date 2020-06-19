@@ -20,6 +20,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       <Loading loading={loading} width="7px" duration={3} />
       <Section padding={4}>
         <Container wrapper direction={["column", "row", "row"]} center>
+          <h3>test</h3>
         </Container>
         <Spacer />
       </Section>

@@ -1,21 +1,14 @@
 import { CSSProperties, FC } from "react";
+import "./Wrapper.scss";
 
 type ContainerProps = {
   width?: string
 }
+
 export const Wrapper: FC<ContainerProps> = ({ children, width }) => {
   return (
     <>
-      <style jsx>{`
-          .wrapper {
-            padding-right: 24px;
-            padding-left: 24px;
-            max-width: 100%;
-            margin-right: auto;
-            margin-left: auto;
-            ${width ? `width: ${width};` : `width:var(--container-width)`}
-          }
-      `}</style>
+      {width && <style jsx>{`.wrapper {--frame-width: ${width}}`}</style>}
       <div className="wrapper">{children}</div>
     </>
   

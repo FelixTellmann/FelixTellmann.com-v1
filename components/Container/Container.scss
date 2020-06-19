@@ -6,14 +6,15 @@
   align-items: var(--align-items);
   flex: var(--flex);
   justify-content: var(--justify-content);
-  @include responsive('mobile') {
-    flex-direction: var(--flex-direction-mobile);
+
+  @include responsive('desktop') {
+    flex-direction: var(--flex-direction);
   }
   @include responsive('tablet') {
-    flex-direction: var(--flex-direction-tablet);
+    flex-direction: var(--flex-direction-t);
   }
-  @include responsive('desktop') {
-    flex-direction: var(--flex-direction-desktop);
+  @include responsive('mobile') {
+    flex-direction: var(--flex-direction-m);
   }
 }
 
