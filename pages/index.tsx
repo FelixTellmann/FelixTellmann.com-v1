@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import "./index.scss";
-import { Hero, LogoBanner } from "components/Section";
+import "./index.scss";/*
+import { Hero, LogoBanner } from "components";*/
 
 function Index(ctx) {
   
   return (
       <>
-        <Hero />
+        {/*<Hero />
         <LogoBanner />
-        <Hero />
+        <Hero />*/}
       </>
   
   );

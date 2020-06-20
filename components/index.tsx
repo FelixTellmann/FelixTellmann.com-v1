@@ -1,4 +1,4 @@
-export * from "./Layout/Layout";
+export * from "./Layout";
 export * from "./Loading";
 export * from "./Section";
 export * from "./Icons";

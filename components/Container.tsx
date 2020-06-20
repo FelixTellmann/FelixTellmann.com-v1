@@ -1,10 +1,11 @@
 import { CSSProperties, FC } from "react";
-import { Wrapper } from "components/Wrapper/Wrapper";
+import { Wrapper } from "components";
 import "./Container.scss";
 
 type ContainerProps = {
   wrapper?: boolean | string
   maxWidth?: string
+  height?: string
   id?: string
   className?: string
   direction?: ("row" | "column" | string)[]
@@ -21,6 +22,7 @@ export const Container: FC<ContainerProps> = (
   {
     children,
     maxWidth,
+    height,
     wrapper,
     direction = ["column", "column", "column"],
     align = "stretch",
@@ -63,6 +65,7 @@ export const Container: FC<ContainerProps> = (
           --flex-direction: ${direction[2]};
           --flex-direction-t: ${direction[1]};
           --flex-direction-m: ${direction[0]};
+          ${height ? `height: ${height};` : ""};
         }
     `}
       </style>
