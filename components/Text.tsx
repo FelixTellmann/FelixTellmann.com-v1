@@ -1,5 +1,5 @@
 import { FC, createElement, StyleHTMLAttributes, CSSProperties } from "react";
-import "./TextItem.scss";
+import "./Text.scss";
 
 type TextItemProps = {
   /*element type*/
@@ -35,7 +35,7 @@ type TextItemProps = {
   
 }
 
-export const TextItem: FC<TextItemProps> = (props, { style = {} }) => {
+export const Text: FC<TextItemProps> = (props, { style = {} }) => {
   const { lineHeight, highlight, uppercase, center, maxWidth, noMargin, secondary, x, y } = props;
   const elements = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "small"];
   let element = "";

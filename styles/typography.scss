@@ -38,40 +38,6 @@ h1, h2, h3, h4, h5, h6, p, small {
   }
 }
 
-h1.hero {
-  font-size: var(--font-size-hero);
+h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-headings);
-
-  & + .h2 {
-    font-weight: var(--font-weight-subheading);
-  }
-}
-
-h1 {
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-headings);
-
-  & + .h3 {
-    font-weight: var(--font-weight-subheading);
-  }
-}
-
-h2 {
-  font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-headings);
-}
-
-h3 {
-  font-size: var(--font-size-h3);
-  font-weight: var(--font-weight-headings);
-}
-
-h4 {
-  font-size: var(--font-size-h5);
-  font-weight: var(--font-weight-headings);
-}
-
-small {
-  font-size: var(--font-size-smaller);
-  font-weight: var(--font-weight-p);
 }

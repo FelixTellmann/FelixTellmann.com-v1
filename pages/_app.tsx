@@ -6,7 +6,7 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import { Container, Spacer, Loading, Section, TextItem, Typed } from "components";
+import { Container, Spacer, Loading, Section, Text, Typed } from "components";
 
 export type Props = AppProps
 
@@ -31,7 +31,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       <Component {...pageProps} />
       <Section spacing={2}>
         <Container wrapper className="hero__content" vcenter maxWidth={"800px"}>
-          <TextItem h2 highlight>
+          <Text h2>
             Hi, I'm <span className="highlight">Felix</span>. <br />
             <Typed content={content}
                    typeSpeed={40}
@@ -39,7 +39,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
                    backDelay={1850}/**/
                    loop
                    cursorChar={"|"} />
-          </TextItem>
+          </Text>
         </Container>
       </Section>
       <Section spacing={2} className="footer" id="footer" background={"#323232"}>
