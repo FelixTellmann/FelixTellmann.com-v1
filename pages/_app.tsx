@@ -1,5 +1,6 @@
 import App, { AppProps } from "next/app";
 import React, { FC, Fragment, CSSProperties } from "react";
+import LogoSvg from "public/logo3-28.svg";
 
 import "styles/reset.css";
 import "styles/typography.scss";
@@ -20,7 +21,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       <Loading loading={loading} width="7px" duration={3} />
       <Frame>
         <Header>
-          <Logo href="#home" src="public/logo3-28.svg" />
+          <Logo href="#home" src=""><LogoSvg /></Logo>
           <Nav>
             <NavItem href="#services" title="Services" onClick={(e) => console.log("asd")} />
             <NavItem href="#work" title="Work" />

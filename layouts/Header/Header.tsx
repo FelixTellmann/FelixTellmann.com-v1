@@ -11,9 +11,9 @@ export const Header: FC = ({ children }) => {
           height: var(--header-height);
           display: flex;
           background-color: rgba(var(--color-background-rgb), 0.7);
-          box-shadow: 0px -1px 0px 0px inset rgba(0, 0, 0, 0.15);
-          transition: 0.1s ease-in;
-          backdrop-filter: saturate(180%) blur(5px);
+          box-shadow: var(--shadow-header);
+          transition: var(--transition);
+          backdrop-filter: var(--blur);
         }
       
       `}</style>

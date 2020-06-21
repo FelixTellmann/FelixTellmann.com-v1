@@ -82,6 +82,8 @@ small { --size: 1.4rem; --size-t: 1.4rem; --size-m: 1.4rem;}
   /*================ Borders/Shadows ================*/
   --radius: 0.5rem;
   --radius-strong: 0.8rem;
+  --blur: saturate(180%) blur(5px);
+  --shadow-header: 0px -1px 0px 0px inset rgba(0, 0, 0, 0.15);
   --shadow-smallest: 0px 4px 8px rgba(0, 0, 0, 0.12);
   --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
   --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
