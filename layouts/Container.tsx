@@ -49,6 +49,7 @@ export const Container: FC<ContainerProps> = (
   
   if (row) {
     direction = ["row", "row", "row"];
+    flex = 1;
   }
   
   if (full) {

@@ -6,8 +6,9 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import {  Loading } from "components";
+import { Loading } from "components";
 import { Frame, Container, Spacer, Section } from "layouts";
+import { Header, Logo, Nav, NavItem, SocialNav, SocialNavItem, CallToAction } from "layouts/Header";
 
 export type Props = AppProps
 
@@ -18,20 +19,20 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
     <>
       <Loading loading={loading} width="7px" duration={3} />
       <Frame>
-        {/*<Header>
-          <Logo href src />
+        <Header>
+          <Logo href="#home" src="public/logo3-28.svg" />
           <Nav>
-            <NavItem href={``} onClick={``}>Services</NavItem>
-            <NavItem href={``} onClick={``}>Work</NavItem>
-            <NavItem href={``} onClick={``}>Process</NavItem>
-            <NavItem href={``} onClick={``}>Contact</NavItem>
+            <NavItem href="#services" title="Services" onClick={(e) => console.log("asd")} />
+            <NavItem href="#work" title="Work" />
+            <NavItem href="#process" title="Process" />
+            <NavItem href="#contact" title="Contact" />
           </Nav>
           <SocialNav>
             <SocialNavItem icon={``} href={``} title={``} />
             <SocialNavItem icon={``} href={``} title={``} />
           </SocialNav>
           <CallToAction href={``} onClick={``}>Get Started</CallToAction>
-        </Header>*/}
+        </Header>
         <Component {...pageProps} />
       </Frame>
       {/*<Footer>

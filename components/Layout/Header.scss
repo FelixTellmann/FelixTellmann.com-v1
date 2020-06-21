@@ -80,9 +80,7 @@
         font-weight: var(--font-weight-nav);
         text-decoration: none;
         transition: color ease-in-out 0.17s;
-        @include responsive('mobile') {
-          margin: 0 var(--spacing-2)
-        }
+
 
         &:before {
           position: absolute;
