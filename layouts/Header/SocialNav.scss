@@ -1,0 +1,21 @@
+.social-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: var(--gap);
+  transition: var(--transition);
+
+  .social-nav__item {
+    padding: var(--spacing-2);
+    color: inherit;
+    font-size: var(--font-size-nav);
+    font-weight: var(--font-weight-nav);
+    text-decoration: none;
+    transition: color ease-in-out 0.17s;
+
+    &:hover, &:focus, &:active, &.active {
+      outline: none;
+      color: var(--color-accent);
+    }
+  }
+}

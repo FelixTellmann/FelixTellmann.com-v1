@@ -13,11 +13,7 @@ export const Logo: FC<LogoProps> = ({ children, href, src, headerActive = true }
     <>
       <Link href={href}>
         <a className={`logo ${headerActive ? "active" : ""}`}>
-          {
-            src
-            ? <img src={src} alt="Logo" />
-            : children
-          }
+          {src ? <img src={src} alt="Logo" /> : children}
         </a>
       </Link>
     </>

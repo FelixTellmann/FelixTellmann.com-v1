@@ -9,14 +9,15 @@ export const Nav: FC = ({ children }) => {
 type NavItemProps = {
   href: string
   title: string
+  target?: string
   onClick?: Function
 }
 
-export const NavItem: FC<NavItemProps> = ({ title, href, onClick }) => {
+export const NavItem: FC<NavItemProps> = ({ title, href, onClick ,target}) => {
   return (
     <>
       <Link href={href}>
-        <a className="nav__item" onClick={onClick && ((e) => onClick(e))}>{title}</a>
+        <a className="nav__item" onClick={onClick && ((e) => onClick(e))} target={target}>{title}</a>
       </Link>
     </>
   );

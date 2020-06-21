@@ -18,12 +18,6 @@
     --logo-right-100: 42%;
   }
 
-  /*&.active {
-    img, svg {
-      animation-name: logoAnimation;
-    }
-  }*/
-
   &:not(.active) {
     img, svg {
       animation-name: logoAnimation

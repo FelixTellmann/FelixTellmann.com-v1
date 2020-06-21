@@ -29,8 +29,8 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
             <NavItem href="#contact" title="Contact" />
           </Nav>
           <SocialNav>
-            <SocialNavItem icon={``} href={``} title={``} />
-            <SocialNavItem icon={``} href={``} title={``} />
+            <SocialNavItem icon={`FaFacebook`} href={``} title={`Facebook`} />
+            <SocialNavItem icon={`IoLogoWhatsapp`} href={``} title={`Whatsapp`} />
           </SocialNav>
           <CallToAction href={``} onClick={``}>Get Started</CallToAction>
         </Header>
