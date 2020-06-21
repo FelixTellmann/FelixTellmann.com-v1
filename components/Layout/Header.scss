@@ -35,30 +35,32 @@
           clip-path: polygon(var(--logo-left-100) 0, var(--logo-left-100) 100%, var(--logo-right-100) 100%, var(--logo-right-100) 0);
         }
       }
+      @keyframes logoAnimationReverse {
+        0% {
+          clip-path: polygon(var(--logo-left-100) 0, var(--logo-left-100) 100%, var(--logo-right-100) 100%, var(--logo-right-100) 0);
+        }
+        100% {
+          clip-path: polygon(var(--logo-left) 0, var(--logo-left) 100%, var(--logo-right) 100%, var(--logo-right) 0);
+        }
+      }
 
       .logo__item {
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
         --logo-left: 0;
         --logo-right: 100%;
         --logo-left-100: 30%;
         --logo-right-100: 42%;
+        animation-fill-mode: forwards;
 
         &:hover, &:focus, &:active, &.active {
-          animation-name: logoAnimation;
-          animation-duration: 0.3s;
-          animation-timing-function: ease-in-out;
-          animation-delay: 0s;
-          animation-iteration-count: 1;
-          animation-direction: reverse;
-          animation-fill-mode: both;
+          animation-name: logoAnimationReverse;
         }
 
         &.scrolled-down {
           animation-name: logoAnimation;
-          animation-duration: 0.3s;
-          animation-timing-function: ease-in-out;
-          animation-delay: 0s;
-          animation-iteration-count: 1;
-          animation-fill-mode: both;
+
         }
       }
     }

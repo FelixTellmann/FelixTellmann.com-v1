@@ -12,7 +12,8 @@
             "pages": "./pages",
             "library": "./library",
             "public": "./public",
-            "styles": "./styles"
+            "styles": "./styles",
+            "layouts": "./layouts"
         }
     },
     "scripts": {

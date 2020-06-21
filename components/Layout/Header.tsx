@@ -5,7 +5,7 @@ import { useGlobalEvent, useMouseEvents } from "beautiful-react-hooks";
 import Logo from "public/logo3-28.svg";
 
 import "./Header.scss";
-import { Section } from "components/Section";
+import {  } from "components/Section";
 
 export type HeaderProps = {
   data: {

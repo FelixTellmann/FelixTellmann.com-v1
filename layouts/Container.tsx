@@ -1,5 +1,5 @@
 import { CSSProperties, FC } from "react";
-import { Wrapper } from "components";
+import { Wrapper } from "layouts";
 import "./Container.scss";
 
 type ContainerProps = {

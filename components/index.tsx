@@ -4,7 +4,4 @@ export * from "./Section";
 export * from "./Icons";
 export * from "./Button";
 export * from "./Typed";
-export * from "./Container";
-export * from "./Wrapper";
-export * from "./Spacer";
 export * from "./Text";

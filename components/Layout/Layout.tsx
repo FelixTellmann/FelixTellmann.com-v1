@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState, useRef } from "react";
-import { Button, Container, Loading, Section, Text, Typed } from "components";
+import { Button,  Loading,  Text, Typed } from "components";
 import Link from "next/link";
 import Logo from "public/logo-new.svg";
 import { FaFacebookF, FaGithub, FaRegLightbulb } from "react-icons/fa";
@@ -39,7 +39,7 @@ export const Layout: FC<ThemeProps> = ({ children, loading }) => {
   
   return (
     <div className="layout">
-      <Loading loading={loading} width="7px" duration={3} />
+      
       <div className="layout__frame">
         <Header data={header}/>
         {children}

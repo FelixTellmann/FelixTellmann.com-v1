@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./Section.scss";
-import { Wrapper } from "components";
+import { Wrapper } from "layouts";
 
 type SectionProps = {
   wrapper?: boolean
