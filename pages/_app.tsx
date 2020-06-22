@@ -7,7 +7,7 @@ import "styles/typography.scss";
 import "styles/theme.scss";
 
 import { useState, useEffect } from "react";
-import { Loading } from "components";
+import { Button, Loading } from "components";
 import { Frame, Container, Spacer, Section } from "layouts";
 import { Header, Logo, Nav, NavItem, SocialNav, SocialNavItem, CallToAction } from "layouts/Header";
 
@@ -32,7 +32,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
             <SocialNavItem icon={`FaFacebook`} href={``} title={`Facebook`} />
             <SocialNavItem icon={`IoLogoWhatsapp`} href={``} title={`Whatsapp`} />
           </SocialNav>
-          <CallToAction href={``} onClick={``}>Get Started</CallToAction>
+          <Button href={``} onClick={(e) => console.log("asd2")} title="Get Started" size="1.5rem"/>
         </Header>
         <Component {...pageProps} />
       </Frame>

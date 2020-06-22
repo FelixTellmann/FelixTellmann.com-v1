@@ -47,7 +47,7 @@ small { --size: 1.4rem; --size-t: 1.4rem; --size-m: 1.4rem;}
   --font-weight-headings: 700;
   --font-weight-subheading: 300;
   --font-weight-button: 500;
-  --font-line-height: 1.5em;
+  --font-line-height: calc(0.2em + 2ex + 0.2em);
   /* Type Options
 
   /*================ Frame, Header, Footer ================*/
